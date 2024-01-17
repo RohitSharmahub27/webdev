@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('./background.jpg') center/cover fixed no-repeat; /* Replace 'your-background-image.jpg' with the path to your image */
+    background-color: rgba(52, 152, 219, 0.6); /* Background color with transparency */
+    color: #fff;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+header {
+    text-align: center;
+    background-color: rgba(185, 41, 163, 0.8); /* Header background color with transparency */
+    padding: 20px;
+}
+
+/* ... rest of the styles remain the same ... */
+
+
+h1 {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background-color: #2d2c2e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1f6695;
+}
+
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #2980b9;
+    margin: 0 auto;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.weather-info img {
+    width: 100px;
+}
+
+.temperature h2 {
+    font-size: 3em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.details i {
+    margin-right: 5px;
+}
+
+.forecast {
+    border-top: 2px solid #2980b9;
+    padding-top: 20px;
+}
+
+.forecast h3 {
+    margin-bottom: 10px;
+}
+
+/* Animation for search button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    animation: pulse 0.5s infinite;
+}
